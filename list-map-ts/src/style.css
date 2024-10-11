@@ -94,3 +94,21 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+ul {
+  height: 300px;
+  width: 400px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-around;
+  text-wrap: wrap;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+}

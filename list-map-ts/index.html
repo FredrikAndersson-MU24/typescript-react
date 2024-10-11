@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,18 @@
     <title>Vite + TS</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <p class="fruit"></p>
+      <ul id="list"></ul>
+      <div class="input-fields">
+        <input type="text" id="name" placeholder="name" />
+        <input type="text" id="color" placeholder="color" />
+        <input type="text" id="weight" placeholder="weight" />
+        <button id="add">add</button>
+        <button class="clear">clear</button>
+      </div>
+    </div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
