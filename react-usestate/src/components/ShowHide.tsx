@@ -4,7 +4,7 @@ import "../App.css";
 const ShowHide = () => {
   const [toggle, setToggle] = useState<boolean>(true);
   const [text, setText] = useState<string>("");
-  const [buttonName, setButtonName] = useState<string>("Hide text");
+  const [buttonName, setButtonName] = useState<string>("Show text");
   const Toggle = () => {
     if (toggle) {
       setToggle(false);
@@ -22,9 +22,7 @@ const ShowHide = () => {
   return (
     <>
       <Button name={buttonName} click={Toggle} />
-      <p id="text" className={class}>
-        {text}
-      </p>
+      <p id="text">{text}</p>
     </>
   );
 };
