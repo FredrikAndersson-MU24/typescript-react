@@ -32,7 +32,8 @@ function App() {
         Clicks: {array.length - 2}
       </button>
       <p>
-        {array[array.length - 3]} + {array[array.length - 2]} ={" "}
+        {array.length >= 3 ? array[array.length - 3] : "0"} +{" "}
+        {array.length >= 3 ? array[array.length - 2] : "1"} ={" "}
         {array[array.length - 1]}
       </p>
       <button
