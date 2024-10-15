@@ -4,7 +4,6 @@ import "./App.css";
 
 function App() {
   const [array, setArray] = useState<Array<number>>([0, 1]);
-
   useEffect(() => {
     window.localStorage.setItem("number", array.toString());
   }, [array]);
@@ -13,10 +12,7 @@ function App() {
     <>
       <button
         onClick={() =>
-          setArray((a) => [
-            ...a,
-            array[array.length - 1] + array[array.length - 2],
-          ])
+          setArray((a) => [...a, a[a.length - 1] + a[a.length - 2]])
         }
       >
         Clicks: {array.length - 2}
